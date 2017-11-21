@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.text-uppercase, h1, h5 {
+  text-transform: uppercase;
+}
+
 .fixed-menu{
   position: fixed;
   padding: 30px;
@@ -26,13 +30,13 @@
   font-weight: 100;
   position: relative;
   right: -150%;
-
 }
-.float-left {
+
+.float-left, #first-section2 {
   float: left;
 }
 
-.float-right{
+.float-right, .fs-one, .amplify-your-ride {
   float: right;
 }
 
@@ -49,7 +53,7 @@ header#first-section {
   background: linear-gradient(#691B84, #681C82, #691B84, #2B1E66);
 }
 
-#first-section img {
+#first-section img.gif {
   width: 1350px;
   height: 740px;
   background-image: linear-gradient(to left rgb(110,38,139), rgba(110,38,139,.5));
@@ -59,5 +63,105 @@ header#first-section {
 
 #first-section2 {
   color: #fff;
+  line-height: 1.4;
+  width: 35%;
+  height: 35%;
+  position: relative;
+  left: 130px;
+  bottom: 100px;
+  display: inline-block;
+}
 
+#first-section2 p {
+  font-size: 18px;
+}
+
+h1{
+  font-size: 40px;
+  color: #352384;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h5 {
+  font-weight: 500;
+}
+
+.phone {
+  display: inline-block;
+  width: 55%;
+  height: 55%;
+  position: relative;
+  left: 240px;
+  bottom: 100px;
+}
+
+aside#sign-up {
+  width: 561px;
+  height: 421px;
+  background-color: #FFF;
+  z-index: 900;
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+div.su-container {
+  padding: 65px;
+}
+
+.ph-number {
+  border: none;
+  border-bottom: .3px solid #000;
+  width: 450px;
+  padding: 10px 0 10px 0;
+}
+
+input.message {
+  padding-bottom: 215px;
+}
+
+div.links-top {
+  margin: 30px 0 30px 0;
+}
+
+.pink-button {
+  background: #FF00BF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+span {
+  color: #FF00BF;
+}
+
+p.little {
+  font-size: 9px;
+  font-weight: 500;
+}
+
+#first-video{
+  height: 800px;
+  background: #fff;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.paragraph-1{
+  position: relative;
+  top: 30px;
+  width: 30%;
+  left: 50px;
+  line-height: 20pt;
+}
+
+.paragraph-1 > h3{
+  font-size: 18pt;
 }
