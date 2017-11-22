@@ -1,16 +1,21 @@
-/*
- * Estilos de tu proyecto*/
+/*Quitando márgenes y definiendo fuente con selector universal*/
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .text-uppercase, h1, h5 {
   text-transform: uppercase;
 }
 
-.fixed-menu{
+/*Fijando menú de navegación*/
+nav.fixed-menu {
   position: fixed;
   padding: 30px;
   margin: 10px 30px;
@@ -21,25 +26,6 @@
   margin: 0 15px;
 }
 
-.right-menu-items{
-  box-sizing: content-box;
-  text-align: right;
-  color: #fff;
-  vertical-align: top;
-  font-size: 24px;
-  font-weight: 100;
-  position: relative;
-  right: -150%;
-}
-
-.float-left, #first-section2 {
-  float: left;
-}
-
-.float-right, .fs-one, .amplify-your-ride {
-  float: right;
-}
-
 .logo {
   width: 63px;
   height: 40px;
@@ -48,6 +34,47 @@
   vertical-align: middle;
 }
 
+.background-menu {
+  background-color: rgba(44, 18, 68, .5);
+  width: 100%;
+  height: 100px;
+  z-index: 1050;
+  position: fixed;
+}
+
+.right-menu-items {
+  box-sizing: content-box;
+  text-align: right;
+  color: #fff;
+  vertical-align: top;
+  font-size: 19px;
+  font-weight: normal;
+  position: relative;
+  left: 150%;
+}
+
+a.log-in {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+a.menu-item:hover {
+  color: #FF00BF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Clases reutilizables de float*/
+.float-left, #first-section2 {
+  float: left;
+}
+
+.float-right, .fs-one, .amplify-your-ride {
+  float: right;
+}
+
+/*Fondo con gradación*/
 header#first-section {
   height: 1174px;
   background: linear-gradient(#691B84, #681C82, #691B84, #2B1E66);
@@ -56,7 +83,7 @@ header#first-section {
 #first-section img.gif {
   width: 1350px;
   height: 740px;
-  background-image: linear-gradient(to left rgb(110,38,139), rgba(110,38,139,.5));
+  background-image: linear-gradient(to left rgb(110, 38, 139), rgba(110, 38, 139, .5));
   position: relative;
   bottom: 110px;
 }
@@ -76,7 +103,7 @@ header#first-section {
   font-size: 18px;
 }
 
-h1{
+h1 {
   font-size: 40px;
   color: #352384;
 }
@@ -91,15 +118,17 @@ h5 {
   font-weight: 500;
 }
 
+/*Imagen flotante junto a texto*/
 .phone {
   display: inline-block;
-  width: 55%;
-  height: 55%;
+  width: 40%;
+  height: 40%;
   position: relative;
   left: 240px;
   bottom: 100px;
 }
 
+/*Recuadro de inscripción*/
 aside#sign-up {
   width: 561px;
   height: 421px;
@@ -147,21 +176,177 @@ p.little {
   font-weight: 500;
 }
 
-#first-video{
-  height: 800px;
-  background: #fff;
-  margin-top: 0;
-  padding-top: 0;
+a {
+  text-decoration: none;
 }
 
-.paragraph-1{
+a:hover {
+  text-decoration: underline;
+  cursor: poin
+}
+
+/*Sección de videos*/
+#grid-container {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-rows: 500px 500px 500px;
+  width: 100%;
+}
+
+/*Formato textos videos*/
+div.text>h3 {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+
+.text {
+  padding: 50px;
+}
+
+.video-1 {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-columns: 455px auto;
+}
+
+.video-2 {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-columns: auto 455px;
+}
+
+/*Estilo de footer*/
+footer {
+  display: block;
+  background-color: #333447;
   position: relative;
-  top: 30px;
-  width: 30%;
-  left: 50px;
-  line-height: 20pt;
+  height: 500px;
 }
 
-.paragraph-1 > h3{
-  font-size: 18pt;
+section.columns {
+  position: relative;
+  left: 9%;
+  top: 35px;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/*Columnas con vúnculo*/
+footer>section.columns>ul {
+  display: inline-block;
+  width: 150px;
+  margin-left: 100px;
+  text-align: left;
+  line-height: 40px;
+}
+
+footer>.columns>ul>li.first {
+  margin-top: 20px;
+}
+
+footer>.columns>ul>li {
+  list-style: none;
+  color: white;
+  font-weight: 100;
+}
+
+/*Interacción con el cursor*/
+li a:hover {
+  color: #FF00BF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fourth-column {
+  position: relative;
+  top: 20px;
+  margin-left: 50px;
+}
+
+li>a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Immágenes con ruta de descarga a la app*/
+.icon_apple {
+  padding-top: 15px;
+  width: 75%;
+}
+
+.icon_google {
+  width: 75%;
+  height: auto;
+  padding-top: 15px;
+}
+
+.icon_microsoft {
+  width: 75%;
+  height: auto;
+  padding-top: 15px;
+}
+
+.division_line {
+  position: relative;
+  left: 1%;
+  top: 30px;
+  border: 1px solid white;
+  width: 650px;
+  margin-left: 360px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.icons-terms {
+  position: relative;
+  left: 10%
+}
+
+/*Display redes sociales*/
+.social_media_icons {
+  display: inline-block;
+  color: white;
+  padding: 5% 0 3% 2%;
+  margin: 0;
+  position: relative;
+  left: 38%;
+  top: 30px;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-facebook, .icon-instagram, .icon-twitter {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 50px;
+  padding: 8px;
+  text-align: center;
+}
+
+footer>p {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+p.copyright {
+  position: relative;
+  left: 0%;
+  top: 30px;
+  text-align: center;
 }
